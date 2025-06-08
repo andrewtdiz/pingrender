@@ -1,4 +1,4 @@
-const url = "https://eval-sheets.onrender.com/ping";
+const url = process.env.URL ?? "";
 
 const ping = () =>
   fetch(url)
