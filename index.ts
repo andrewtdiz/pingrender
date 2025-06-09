@@ -1,5 +1,3 @@
-const url = process.env.URL ?? "";
-
 const formatDate = (date: Date) => {
   return date.toLocaleString('en-US', {
     year: 'numeric',
@@ -11,6 +9,8 @@ const formatDate = (date: Date) => {
     hour12: true
   });
 };
+
+const url = process.env.URL ?? "";
 
 const ping = () =>
   fetch(url)
