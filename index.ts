@@ -12,6 +12,8 @@ const formatDate = (date: Date) => {
 
 const url = process.env.URL ?? "";
 
+if (!url) conosle.warn("NO URL");
+
 const ping = () =>
   fetch(url)
     .then((response) => {
