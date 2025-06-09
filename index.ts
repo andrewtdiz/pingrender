@@ -12,6 +12,8 @@ const formatDate = (date: Date) => {
 
 const url = process.env.URL ?? "";
 
+// test
+
 const ping = () =>
   fetch(url)
     .then((response) => {
