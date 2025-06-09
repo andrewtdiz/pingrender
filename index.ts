@@ -10,7 +10,7 @@ const formatDate = (date: Date) => {
   });
 };
 
-const url = process.env.URL ?? ""; // cannot be empty
+const url = process.env.URL ?? "";
 
 const ping = () =>
   fetch(url)
